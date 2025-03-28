@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import HomePage from './components/HomePage';
+import CropRecommendation from './components/CropRecommendation';
+import GISMap from './components/GISMap';
+import IrrigationPlanner from './components/IrrigationPlanner';
+import PestPrediction from './components/PestPrediction';
+import WeatherForecast from './components/WeatherForecast';
+//import CommunityForum from './components/CommunityForum';
+//import MarketPrices from './components/MarketPrices';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-container">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/crop-recommendation" element={<CropRecommendation />} />
+          <Route path="/gis-map" element={<GISMap />} />
+          <Route path="/irrigation-planner" element={<IrrigationPlanner />} />
+          <Route path="/pest-prediction" element={<PestPrediction />} />
+          <Route path="/weather-forecast" element={<WeatherForecast />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
