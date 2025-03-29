@@ -55,7 +55,7 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
 # Save the scaler for future use
-joblib.dump(scaler, "scaler.pkl")
+joblib.dump(scaler, "crop_scaler.pkl")
 print("✅ Scaler saved as scaler.pkl")
 
 # Split data into training and testing sets (80% train, 20% test)
@@ -67,8 +67,8 @@ rf_classifier = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs
 rf_classifier.fit(X_train, y_train)
 
 # Save the trained model
-joblib.dump(rf_classifier, "crop_recommendation.pkl")
-print("✅ Model saved as crop_recommendation.pkl")
+joblib.dump(rf_classifier, "crop_recommendation_model.pkl")
+print("✅ Model saved as crop_recommendation_model.pkl")
 
 # Evaluate model performance
 y_pred = rf_classifier.predict(X_test)

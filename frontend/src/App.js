@@ -10,6 +10,8 @@ import WeatherForecast from './components/WeatherForecast';
 //import CommunityForum from './components/CommunityForum';
 //import MarketPrices from './components/MarketPrices';
 import './App.css';
+import FarmChat from './components/FarmChat';
+import MarketPrice from './components/MarketPrice';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/irrigation-planner" element={<IrrigationPlanner />} />
           <Route path="/pest-prediction" element={<PestPrediction />} />
           <Route path="/weather-forecast" element={<WeatherForecast />} />
+          <Route path="/market-price" element={<MarketPrice />} />
+          <Route path="/farmchat" element={<FarmChat />} />
         </Routes>
       </div>
     </Router>

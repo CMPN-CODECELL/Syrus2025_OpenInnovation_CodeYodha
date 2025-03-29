@@ -16,7 +16,7 @@ const CropRecommendation = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const API_URL = "http://127.0.0.1:5000/predict"; // Flask backend URL
+  const API_URL = "http://127.0.0.1:5000/predict_crop"; // Flask backend URL
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;

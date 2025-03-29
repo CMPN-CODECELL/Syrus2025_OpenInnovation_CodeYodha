@@ -12,8 +12,8 @@ function Navbar() {
         <li><Link to="/irrigation-planner">Irrigation</Link></li>
         <li><Link to="/pest-prediction">Pest Control</Link></li>
         <li><Link to="/weather-forecast">Weather</Link></li>
-        <li><Link to="/market-prices">Market Prices</Link></li>
-        <li><Link to="/community-forum">Community</Link></li>
+        <li><Link to="/market-price">Market Prices</Link></li>
+        <li><Link to="/farmchat">Panchayat</Link></li>
       </ul>
     </div>
   );
