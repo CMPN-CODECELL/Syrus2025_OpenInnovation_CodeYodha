@@ -2,6 +2,8 @@
 *Overview*
 DigiKisan is an AI-powered smart farming solution designed to help farmers make better decisions using machine learning and GIS technologies. The system includes:
 
+https://drive.google.com/drive/folders/1p8sZDfRbSdxjh9ck7Nu6ZCYVuvr2XYBi
+
 1. Crop Recommendation System using Random Forest Classifier
 2. Market Price Prediction for estimating crop prices using Linear Regression
 3. Irrigation Advisory System using Fuzzy Inference System (FIS)
